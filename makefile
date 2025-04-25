@@ -13,7 +13,7 @@ $(TARGET): $(OBJ_FILES)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	g++ $(CPPFLAGS) $(CXXFLAGS) -c -o $@ $<
 
-run:
+run: $(TARGET)
 	./$(TARGET)
 
 clean:
