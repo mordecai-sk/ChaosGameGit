@@ -24,7 +24,7 @@ int main()
     sf::Font font;
     sf::Text text;
     sf::Text text1;
-    if (!font.loadFromFile("arial.ttf"))
+    if (!font.loadFromFile("fonts/KOMIKAP_.ttf"))
     {
         // error..
     }
@@ -36,11 +36,11 @@ int main()
         text.setFont(font);
         text.setString("Please click three points on the screen!");
         text.setCharacterSize(20);
-        text.setFillColor(sf::Color::Yellow);
+        text.setFillColor(sf::Color::Blue);
         text1.setFont(font);
         text1.setString("\n Please pick the first point between the triangle!");
         text1.setCharacterSize(20);
-        text1.setFillColor(sf::Color::Yellow);
+        text1.setFillColor(sf::Color::Blue);
 
         /*
 		****************************************
@@ -124,7 +124,7 @@ int main()
         {
             RectangleShape rect(Vector2f(10, 10));
             rect.setPosition(Vector2f(vertices[i].x, vertices[i].y));
-            rect.setFillColor(Color::Yellow);
+            rect.setFillColor(Color::Blue);
             window.draw(rect);
             if (i == 2) { window.draw(text1); }
         }
@@ -133,7 +133,7 @@ int main()
         { 
             RectangleShape rect(Vector2f(10, 10));
             rect.setPosition(Vector2f(points[j].x, points[j].y));
-            rect.setFillColor(Color::Yellow);
+            rect.setFillColor(Color::Blue);
             window.draw(rect);
         }
         
