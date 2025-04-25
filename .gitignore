@@ -1,3 +1,10 @@
+#Extra
+.vs*
+*.vcx*
+*.sln
+x64
+x86
+
 # Prerequisites
 *.d
 
